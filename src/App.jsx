@@ -161,7 +161,6 @@ function FeaturedWork() {
         </article>
         <div className="other-work-heading">
           <span>MORE FROM SNAP CIRCLE</span>
-          <span>02—03</span>
         </div>
         <div className="work-grid">
           <article className="work-card inqry-card">
@@ -175,7 +174,6 @@ function FeaturedWork() {
               </div>
               <div className="card-art-bottom">
                 <span>KNOWLEDGE IN / ANSWERS OUT</span>
-                <span>02 / 03</span>
               </div>
             </div>
             <div className="work-card-info">
@@ -225,7 +223,6 @@ function FeaturedWork() {
               </div>
               <div className="card-art-bottom">
                 <span>SMALL TOOLS / CLEAR PURPOSE</span>
-                <span>03 / 03</span>
               </div>
             </div>
             <div className="work-card-info">

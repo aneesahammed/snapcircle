@@ -494,7 +494,6 @@ function FinQryPreview() {
 
       <div className="fq-stage-foot">
         <span>SAMPLE UI · NO LIVE QUERY OR SAVED DATA</span>
-        <span>01 / 01</span>
       </div>
     </div>
   );
