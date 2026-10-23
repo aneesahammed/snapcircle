@@ -127,7 +127,7 @@ function FeaturedWork() {
         <Eyebrow index="01 / SELECTED WORK">From our studio</Eyebrow>
         <div className="section-heading-row">
           <h2 id="work-title">
-            Built around <em>real questions.</em>
+            Built around <span className="accent-word">real questions.</span>
           </h2>
           <p>
             Different products, one standard: make the work easier to understand
@@ -307,7 +307,7 @@ function MethodSection() {
             <h2 id="method-title">
               Answers need
               <br />
-              <em>a foundation.</em>
+              <span className="accent-word">a foundation.</span>
             </h2>
           </div>
           <p>
@@ -350,7 +350,7 @@ function StudioSection() {
             <br />
             in scale.
             <br />
-            <em>Considered</em>
+            <span className="accent-word">Considered</span>
             <br />
             in every detail.
           </h2>
@@ -422,7 +422,7 @@ function App() {
     window.localStorage.setItem("snapcircle-theme", theme);
     document
       .querySelector('meta[name="theme-color"]')
-      ?.setAttribute("content", theme === "dark" ? "#171816" : "#f5f3ed");
+      ?.setAttribute("content", theme === "dark" ? "#111a17" : "#ffffff");
   }, [theme]);
   return (
     <div className="site-shell">

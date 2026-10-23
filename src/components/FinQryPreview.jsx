@@ -383,7 +383,6 @@ function FinQryPreview() {
                 <div className="fq-loading-status">
                   <span className="fq-pulse-indicator" aria-hidden="true">
                     <span className="fq-pulse-dot" />
-                    <span className="fq-pulse-ring" />
                   </span>
                   <span>Grounding query in AWS CUR 2.0...</span>
                   <span className="fq-loading-pct">{loadingProgress}%</span>
@@ -399,10 +398,6 @@ function FinQryPreview() {
                     className="fq-progress-bar"
                     style={{ width: `${loadingProgress}%` }}
                   />
-                </div>
-                <div className="fq-loading-skeleton" aria-hidden="true">
-                  <div className="fq-skeleton-line short" />
-                  <div className="fq-skeleton-line medium" />
                 </div>
               </div>
             )}
