@@ -1,50 +1,14 @@
-import { ArrowRightIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
+import { ArrowDownIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
 
-function FinQueryPreview() {
-  return (
-    <div className="hero-art" role="img" aria-label="Illustrative preview of finQuery">
-      <div className="hero-art-orbit" aria-hidden="true" />
-      <div className="product-window">
-        <div className="window-topbar">
-          <div className="window-brand"><span className="window-brand-mark" />fin<span>Query</span></div>
-          <span className="window-status"><i /> Workspace preview</span>
-        </div>
-        <div className="window-content">
-          <span className="window-eyebrow">CLOUD COST INTELLIGENCE</span>
-          <p className="window-question">What changed in our compute spend?</p>
-          <div className="answer-block">
-            <div className="answer-heading"><span>Evidence summary</span><span>Illustrative</span></div>
-            <div className="chart" aria-hidden="true">
-              {[40, 54, 44, 69, 58, 78, 66, 88, 76, 100].map((height, index) => (
-                <span key={index} style={{ "--bar-height": `${height}%` }} />
-              ))}
-            </div>
-            <div className="chart-caption"><span>Previous period</span><span>Current period</span></div>
-          </div>
-          <div className="evidence-line"><span className="evidence-mark"><ArrowRightIcon width={13} height={13} /></span>Reasoning connected to source data</div>
-        </div>
-      </div>
-      <div className="art-caption"><span>FINANCIAL INTELLIGENCE</span><span>01 / 03</span></div>
+function Hero1() {
+  return <section className="hero-section" aria-labelledby="hero-title">
+    <div className="container hero-inner">
+      <div className="hero-topline"><span><i /> INDEPENDENT SOFTWARE STUDIO</span><span>DUBLIN, IRELAND · INDEPENDENT BY DESIGN</span></div>
+      <div className="hero-statement"><h1 id="hero-title">Small studio.<br /><em>Serious</em> software<span>.</span></h1><span className="hero-side-note">SC<br />/ 01</span></div>
+      <div className="hero-lower"><div className="hero-description"><p>We build focused software for complex work. From understanding cloud costs to answering customer questions, every product starts with a useful problem.</p><a href="#work" className="hero-cta">Explore our work <ArrowTopRightIcon aria-hidden="true" /></a></div><div className="hero-scroll"><span>SCROLL TO DISCOVER</span><ArrowDownIcon aria-hidden="true" /></div></div>
     </div>
-  );
-}
-
-function Hero1({ className = "" }) {
-  return (
-    <section className={`hero-block ${className}`} aria-labelledby="hero-title">
-      <div className="hero-copy">
-        <div className="hero-eyebrow"><span className="eyebrow-mark" /> Independent software company <span className="eyebrow-divider">/</span> Dublin, Ireland</div>
-        <h1 id="hero-title">Thoughtful software.<br /><span>Built for what’s next.</span></h1>
-        <p className="hero-description">Snap Circle is an independent software company building considered products for complex work, from financial intelligence to useful everyday tools.</p>
-        <div className="hero-actions">
-          <a className="button button-primary" href="#work">Explore our work <ArrowRightIcon width={16} height={16} /></a>
-          <a className="button button-text" href="#company">About Snap Circle <ArrowTopRightIcon width={15} height={15} /></a>
-        </div>
-        <p className="hero-footnote">A small company with a broad point of view.</p>
-      </div>
-      <FinQueryPreview />
-    </section>
-  );
+    <div className="hero-rule" aria-hidden="true"><span>SNAP CIRCLE</span><span>INDEPENDENT BY DESIGN</span><span>01 — 03</span></div>
+  </section>;
 }
 
 export { Hero1 };

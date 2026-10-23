@@ -1,6 +1,6 @@
-# Snap Circle
+# Snapcircle
 
-The Snap Circle company website is a React single-page site for Snapcircle Limited, built with Vite, Tailwind CSS 4 and a Shadcn Blocks hero section.
+The Snapcircle company website is a React single-page site for Snapcircle Limited, built with Vite and Tailwind CSS 4. Its visual system is custom CSS, with light and dark themes.
 
 ## Company and initiatives
 
@@ -31,7 +31,7 @@ npm run deploy
 
 This builds the site, copies its public files into `docs/`, commits all local site changes, and pushes `pages` to GitHub. You can provide a commit message with `npm run deploy -- "Describe the change"`. Keep `.env` and API keys out of the site; they are ignored by Git.
 
-The Shadcn Blocks registry is configured in `components.json`. The local Shadcn MCP server can discover and install blocks through the `@shadcnblocks` registry. `SHADCNBLOCKS_API_KEY` is read from `.env` by the CLI and is never included in the client bundle.
+The Shadcn Blocks registry remains configured in `components.json` for future components. `SHADCNBLOCKS_API_KEY` is read from `.env` by the CLI and is never included in the client bundle.
 
 ## Before publishing
 

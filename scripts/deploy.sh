@@ -12,7 +12,7 @@ npm run build
 git add -A
 
 if ! git diff --cached --quiet; then
-  git commit -m "${1:-Update Snap Circle website}"
+  git commit -m "${1:-Update Snapcircle website}"
 fi
 
 git push origin pages
