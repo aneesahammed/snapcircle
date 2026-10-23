@@ -21,6 +21,16 @@ npm run dev
 
 Create a production build with `npm run build`; preview it locally with `npm run preview`.
 
+## Deploy to GitHub Pages
+
+The live site at <https://snapcircle.io/> is published from the `docs/` directory on the `pages` branch. From that branch, run:
+
+```sh
+npm run deploy
+```
+
+This builds the site, copies its public files into `docs/`, commits all local site changes, and pushes `pages` to GitHub. You can provide a commit message with `npm run deploy -- "Describe the change"`. Keep `.env` and API keys out of the site; they are ignored by Git.
+
 The Shadcn Blocks registry is configured in `components.json`. The local Shadcn MCP server can discover and install blocks through the `@shadcnblocks` registry. `SHADCNBLOCKS_API_KEY` is read from `.env` by the CLI and is never included in the client bundle.
 
 ## Before publishing
