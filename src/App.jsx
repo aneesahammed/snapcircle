@@ -9,7 +9,7 @@ import {
   SunIcon,
 } from "@radix-ui/react-icons";
 import { Hero1 } from "@/components/hero1";
-import { FinQueryPreview } from "@/components/FinQueryPreview";
+import { FinQryPreview } from "@/components/FinQryPreview";
 
 function Brand() {
   return (
@@ -134,7 +134,7 @@ function FeaturedWork() {
             and the outcome easier to trust.
           </p>
         </div>
-        <article className="featured-product" id="finquery">
+        <article className="featured-product" id="finqry">
           <div className="featured-copy">
             <div className="product-index">
               <span>01</span>
@@ -157,7 +157,7 @@ function FeaturedWork() {
               Interactive preview with illustrative data.
             </p>
           </div>
-          <FinQueryPreview />
+          <FinQryPreview />
         </article>
         <div className="other-work-heading">
           <span>MORE FROM SNAP CIRCLE</span>
