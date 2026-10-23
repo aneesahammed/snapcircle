@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 @import "tailwindcss" source(none);
 @source "./";
 
@@ -15,8 +15,7 @@
   --dark-line: #34473c;
   --dark-muted: #adbbb1;
   --font-body: "Manrope", "Helvetica Neue", sans-serif;
-  --font-hero-body: "Inter", "Helvetica Neue", sans-serif;
-  --font-display: "Instrument Serif", Georgia, serif;
+  --font-hero-body: var(--font-body);
   font-family: var(--font-body);
   font-synthesis: none;
   -webkit-font-smoothing: antialiased;
@@ -68,7 +67,7 @@ a { color: inherit; text-decoration: none; }
 .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .hero-inner { position: relative; z-index: 1; width: 100%; min-height: 100svh; display: flex; align-items: flex-start; justify-content: center; padding-block: 108px 40px; }
 .hero-content { width: min(100%, 1120px); margin-inline: auto; text-align: center; }
-.hero-title { display: flex; flex-direction: column; align-items: center; margin: 0; color: #fff; font-family: var(--font-display); font-size: clamp(60px, 7.4vw, 110px); font-weight: 400; letter-spacing: -.035em; line-height: .92; text-wrap: balance; }
+.hero-title { display: flex; flex-direction: column; align-items: center; margin: 0; color: #fff; font-family: var(--font-body); font-size: clamp(60px, 7.4vw, 110px); font-weight: 600; letter-spacing: -.065em; line-height: .98; text-wrap: balance; }
 .hero-title > span { display: block; animation: hero-fade-rise .8s ease-out both; }
 .hero-title > .hero-title-muted { color: rgba(235,241,247,.76); animation-delay: .1s; }
 .hero-copy { max-width: 660px; margin: 22px auto 0; color: rgba(255,255,255,.76); font-family: var(--font-hero-body); font-size: clamp(15px, 1.4vw, 17px); line-height: 1.65; animation: hero-fade-rise .8s ease-out .2s both; }
@@ -223,7 +222,7 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 420px) {
   .header-inner { min-height: 66px; }
   .hero-inner { padding-block: 96px 38px; }
-  .hero-title { font-size: clamp(45px, 12vw, 50px); }
+  .hero-title { font-size: clamp(39px, 10.8vw, 46px); }
   .hero-copy { margin-top: 20px; font-size: 15px; }
   .hero-actions { gap: 10px; margin-top: 26px; }
   .hero-cta { min-height: 48px; padding-inline: 20px; font-size: 13px; }
