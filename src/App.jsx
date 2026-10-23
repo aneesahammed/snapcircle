@@ -9,6 +9,7 @@ import {
   SunIcon,
 } from "@radix-ui/react-icons";
 import { Hero1 } from "@/components/hero1";
+import { FinQueryPreview } from "@/components/FinQueryPreview";
 
 function Brand() {
   return (
@@ -115,35 +116,6 @@ function Eyebrow({ index, children, inverse = false }) {
   );
 }
 
-function FinQueryArtwork() {
-  return (
-    <div
-      className="fin-art"
-      role="img"
-      aria-label="Abstract illustration of a question becoming a traceable answer"
-    >
-      <div className="fin-art-top">
-        <span>FINQUERY / FIELD NOTES</span>
-        <span>001—004</span>
-      </div>
-      <div className="fin-art-center">
-        <span className="fin-orbit fin-orbit-one" />
-        <span className="fin-orbit fin-orbit-two" />
-        <span className="fin-orbit fin-orbit-three" />
-        <span className="fin-origin">?</span>
-        <span className="fin-point fin-point-a" />
-        <span className="fin-point fin-point-b" />
-        <span className="fin-point fin-point-c" />
-        <div className="fin-crosshair" />
-      </div>
-      <div className="fin-art-bottom">
-        <span>QUESTION → CONTEXT → EVIDENCE</span>
-        <span>FIG. 01</span>
-      </div>
-    </div>
-  );
-}
-
 function FeaturedWork() {
   return (
     <section
@@ -170,22 +142,22 @@ function FeaturedWork() {
             </div>
             <p className="product-category">Cloud financial intelligence</p>
             <h3>
-              fin<span>Query</span>
+              fin<span>Qry</span>
               <i>.</i>
             </h3>
             <p className="featured-description">
               Cloud costs create questions faster than dashboards can answer
-              them. finQuery is being built to help teams ask what changed,
+              them. finQry is being built to help teams ask what changed,
               follow the evidence, and see how an answer was reached.
             </p>
             <a className="text-link" href="#method">
               Explore the thinking <ArrowRightIcon aria-hidden="true" />
             </a>
             <p className="product-disclaimer">
-              A developing initiative. Artwork is conceptual.
+              Interactive preview with illustrative data.
             </p>
           </div>
-          <FinQueryArtwork />
+          <FinQueryPreview />
         </article>
         <div className="other-work-heading">
           <span>MORE FROM SNAP CIRCLE</span>
@@ -331,7 +303,7 @@ function MethodSection() {
         </Eyebrow>
         <div className="method-intro">
           <div>
-            <p className="method-overline">Under the surface of finQuery</p>
+            <p className="method-overline">Under the surface of finQry</p>
             <h2 id="method-title">
               Answers need
               <br />
@@ -339,7 +311,7 @@ function MethodSection() {
             </h2>
           </div>
           <p>
-            Stratum Core is the developing system behind finQuery. It connects
+            Stratum Core is the developing system behind finQry. It connects
             natural language questions to governed data, with checks and context
             along the way.
           </p>

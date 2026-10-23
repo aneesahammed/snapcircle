@@ -5,12 +5,12 @@ The Snapcircle company website is a React single-page site for Snapcircle Limite
 ## Company and initiatives
 
 - **Snapcircle Limited** is an independent software company based in Dublin, Ireland (company number 675788).
-- **finQuery** is the featured initiative: cloud financial intelligence, currently in development.
-- **Stratum Core** is the developing foundation behind finQuery, focused on governed and explainable natural-language analytics.
+- **finQry** is the featured initiative: cloud financial intelligence, currently in development.
+- **Stratum Core** is the developing foundation behind finQry, focused on governed and explainable natural-language analytics.
 - **inQry** explores AI customer support: <https://inqry.ai/>.
 - **Tinycrafts** is a maker studio for focused developer tools: <https://tinycrafts.ai/>.
 
-The website presents the company first and keeps its initiatives at their own stages. Product visualisations are illustrative, not live data or product results.
+The website presents the company first and keeps its initiatives at their own stages. The interactive finQry preview uses local sample data and does not run queries or persist saved results.
 
 ## Development
 
@@ -36,5 +36,4 @@ The Shadcn Blocks registry remains configured in `components.json` for future co
 ## Before publishing
 
 - Verify that `hello@snapcircle.io` is monitored, or replace the contact address.
-- Clear the finQuery working name before treating it as a finalized public brand.
 - Confirm DNS, HTTPS and external links after deployment.
