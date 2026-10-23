@@ -94,7 +94,7 @@ function Header({ theme, onThemeToggle }) {
             <ThemeIcon width={17} height={17} aria-hidden="true" />
           </button>
           <a
-            className="nav-contact"
+            className="nav-contact liquid-glass"
             href="mailto:hello@snapcircle.io?subject=Hello%20Snap%20Circle"
             onClick={closeMenu}
           >
