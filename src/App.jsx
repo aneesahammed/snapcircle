@@ -11,6 +11,8 @@ import {
 import { Hero1 } from "@/components/hero1";
 import { FinQryPreview } from "@/components/FinQryPreview";
 
+const THEME_STORAGE_KEY = "snapcircle-theme-v2";
+
 function Brand() {
   return (
     <a className="brand" href="#top" aria-label="Snapcircle home">
@@ -410,13 +412,13 @@ function Footer() {
 
 function App() {
   const [theme, setTheme] = useState(() =>
-    window.localStorage.getItem("snapcircle-theme") === "dark"
-      ? "dark"
-      : "light",
+    window.localStorage.getItem(THEME_STORAGE_KEY) === "light"
+      ? "light"
+      : "dark",
   );
   useLayoutEffect(() => {
     document.documentElement.dataset.theme = theme;
-    window.localStorage.setItem("snapcircle-theme", theme);
+    window.localStorage.setItem(THEME_STORAGE_KEY, theme);
     document
       .querySelector('meta[name="theme-color"]')
       ?.setAttribute("content", theme === "dark" ? "#111a17" : "#ffffff");
