@@ -149,8 +149,8 @@ function FeaturedWork() {
             </h3>
             <p className="featured-description">
               Cloud costs create questions faster than dashboards can answer
-              them. finQry is being built to help teams ask what changed,
-              follow the evidence, and see how an answer was reached.
+              them. finQry is being built to help teams ask what changed, follow
+              the evidence, and see how an answer was reached.
             </p>
             <a className="text-link" href="#method">
               Explore the thinking <ArrowRightIcon aria-hidden="true" />

@@ -23,7 +23,7 @@ Create a production build with `npm run build`; preview it locally with `npm run
 
 ## Deploy to GitHub Pages
 
-The live site at <https://snapcircle.io/> is published from the `docs/` directory on the `pages` branch. From that branch, run:
+The live site at <https://snapcircle.ie/> is published from the `docs/` directory on the `pages` branch. From that branch, run:
 
 ```sh
 npm run deploy
@@ -35,5 +35,5 @@ The Shadcn Blocks registry remains configured in `components.json` for future co
 
 ## Before publishing
 
-- Verify that `hello@snapcircle.io` is monitored, or replace the contact address.
+- Verify that `hello@snapcircle.ie` is monitored, or replace the contact address.
 - Confirm DNS, HTTPS and external links after deployment.
